@@ -10,6 +10,11 @@ class PathFinder {
 public:
     explicit PathFinder( Maze::Maze& maze );
 
+    
+    /**
+     * Finds and travels the shortest path from start to end in maze.
+     * It also modifies the maze if it is needed.
+     */
     void findShortestPath();
     const std::stack< Maze::Field::Id >& getRoute() const;
 

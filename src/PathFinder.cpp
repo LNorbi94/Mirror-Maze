@@ -94,5 +94,4 @@ void PathFinder::travelShortestPath()
             nextField = field;
         }
     }
-    //m_route.push( field->getId() );
 }

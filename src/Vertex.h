@@ -16,7 +16,7 @@ struct Vertex {
     int previousVertex = -1;
     Direction directionFromPrevious = Direction::Unknown;
 
-    int distance;
+    int distance = 0;
 };
 
 }

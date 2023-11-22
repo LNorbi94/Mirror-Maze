@@ -20,7 +20,24 @@ public:
 
     Maze( int width, int height, const std::string& maze );
 
+    /**
+     * Gets the neighbours of the given field, while the light is coming from the given direction.
+     * The array might be incomplete if the light can not continue in all direction, so fields can be nullptr.
+     * 
+     * @param field to get neighbours of
+     * @param direction of light
+     *
+     * @return neighbours of the field
+     */
     [[nodiscard]] std::array< Field*, 3 > getNeighbours( const Field* field, Direction direction );
+    /**
+     * Gets the field of maze with the given Id.
+     * Id is checked if it is within boundaries of the maze.
+     * 
+     * @param Id of the field
+     *
+     * @return field of the maze, or a nullptr if the Id is not valid
+     */
     [[nodiscard]] Field* getMazeField( const Field::Id& id );
     [[nodiscard]] int getVertexId( Field* field, int directions );
 

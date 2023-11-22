@@ -14,5 +14,5 @@ namespace Maze
 
     int getMultiDirection( Direction first, Direction second );
     Direction reverseDirection( Direction direction );
-    std::string directionToString( Direction direction );
+std::string directionToString( Direction direction );
 }
